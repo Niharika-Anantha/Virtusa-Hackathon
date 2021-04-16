@@ -1,0 +1,155 @@
+<head>
+    <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style> 
+    nav{
+      background: #FF8C00;
+      padding: 10px 10px;
+    }
+  
+  .header a.hub{
+      color: white;
+      font-size: 25px;
+      font-weight: bold;
+    }
+  
+    nav ul{
+      float: right;
+      margin-right: 20px;
+    }
+  
+    nav ul li{
+      display: inline-block;
+      line-height: 40px;
+      margin: 0 10px;
+    }
+  
+    nav ul li a{
+      color: white;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+  
+    a.acive,a:hover{
+      background:  #ff944d;
+      transition: 0.5s;
+    }
+  
+    .header-right {
+      float: right;
+    }
+    
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin:10%;
+    text-align: center;
+    
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin: 80px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #b700ff;
+    color: white;
+    margin: 80px;
+    width: 500px;
+  }
+  form{
+    margin: 50px auto;
+    width: 500px; 
+  }
+  
+  .btn{
+    background-color:#ff00007e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 11px;
+    margin: 2px 2px;
+    cursor: pointer;
+  }
+    </style>
+  </head> 
+  
+  <body>
+   <div class="header">
+    <nav>
+      <a href="#default" class="hub">LAW HUB</a>
+      <div class="header-right">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a class="active" href="#logout">logout</a></li>
+      </ul>
+      </div>
+    </nav>
+   </div>
+   <p></p>
+  </body>
+   <form class="d-flex justify-content-center">
+    <input type="text" class="form-control" placeholder="Type here to search">&nbsp;&nbsp;
+    <button type="submit" class="btn">Search</button>&nbsp;&nbsp;
+    <button type="submit" class="btn">ADD</button>
+   </form>
+   <p></p>
+   <table id="customers" >
+    <thead>
+      <tr>
+        <th>S.no</th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Options</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>ABC</td>
+        <td>abc@gmail.com</td>
+        <td><span class="glyphicon glyphicon-edit"></span> &nbsp;&nbsp; <span class="glyphicon glyphicon-trash"></span></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>XYZ</td>
+        <td>xyz@gmail.com</td>
+        <td><span class="glyphicon glyphicon-edit"></span> &nbsp;&nbsp; <span class="glyphicon glyphicon-trash"></span></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>UVW</td>
+        <td>uvw@gmail.com</td>
+        <td><span class="glyphicon glyphicon-edit"></span> &nbsp;&nbsp; <span class="glyphicon glyphicon-trash"></span></td>
+       
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>BCA</td>
+        <td>bca@gmail.com</td>
+        <td><span class="glyphicon glyphicon-edit"></span> &nbsp;&nbsp; <span class="glyphicon glyphicon-trash"></span></td>
+       
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>BEA</td>
+        <td>bea@gmail.com</td>
+        <td><span class="glyphicon glyphicon-edit"></span> &nbsp;&nbsp; <span class="glyphicon glyphicon-trash"></span></td> 
+      </tr>
+    </tbody>
+   </table>
